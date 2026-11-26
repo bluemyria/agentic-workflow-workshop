@@ -16,6 +16,7 @@
   "SpeakersPage": {
     "metaTitle": "Ponentes · React Alicante Companion",
     "title": "Ponentes",
-    "description": "Quién habla en React Alicante, y cuándo."
+    "description": "Quién habla en React Alicante, y cuándo.",
+    "empty": "Todavía no se han anunciado ponentes."
   }
 }

@@ -16,6 +16,7 @@
   "SpeakersPage": {
     "metaTitle": "Speakers · React Alicante Companion",
     "title": "Speakers",
-    "description": "Who is speaking at React Alicante, and when."
+    "description": "Who is speaking at React Alicante, and when.",
+    "empty": "No speakers have been announced yet."
   }
 }
