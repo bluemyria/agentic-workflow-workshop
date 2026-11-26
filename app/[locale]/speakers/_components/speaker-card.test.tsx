@@ -31,5 +31,16 @@ describe("SpeakerCard", () => {
     expect(links[0]).toHaveTextContent("Opening Keynote");
     expect(links[0]).toHaveAttribute("href", "/en/sessions/opening-keynote");
     expect(links[1]).toHaveAttribute("href", "/en/sessions/rsc-diet");
+
+    // The start time is machine-readable, not just text.
+    expect(screen.getByText("09:00").tagName).toBe("TIME");
+    expect(screen.getByText("09:00")).toHaveAttribute("datetime", "09:00");
+  });
+
+  it("keeps the session list a list in every browser", () => {
+    render(<SpeakerCard name="Marta Fernandez" sessions={sessions} />);
+
+    expect(screen.getByRole("list")).toBeInTheDocument();
+    expect(screen.getAllByRole("listitem")).toHaveLength(2);
   });
 });

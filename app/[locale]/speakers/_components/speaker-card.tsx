@@ -18,21 +18,36 @@ export function SpeakerCard({ name, sessions }: SpeakerCardProps) {
           {name}
         </CardTitle>
 
-        <Flex as="ul" direction="column" gap="3" listStyleType="none">
+        {/* role="list": WebKit drops the list role when list-style is none. */}
+        <Flex
+          as="ul"
+          role="list"
+          direction="column"
+          gap="3"
+          listStyleType="none"
+        >
           {sessions.map((session) => (
             <li key={session.id}>
               <Link href={`/sessions/${session.id}`}>
                 <Flex
                   as="span"
+                  data-group
                   direction="column"
                   gap="1"
                   fontSize="sm"
-                  _hover={{ color: "var(--accent-hex)" }}
                 >
-                  <Text as="span" color="var(--text-muted)">
-                    {session.startTime}
+                  <Text asChild color="var(--text-muted)">
+                    <time dateTime={session.startTime}>
+                      {session.startTime}
+                    </time>
                   </Text>
-                  <Text as="span" fontWeight="medium">
+                  <Text
+                    as="span"
+                    fontWeight="medium"
+                    css={{
+                      "[data-group]:hover &": { textDecoration: "underline" },
+                    }}
+                  >
                     {session.title}
                   </Text>
                 </Flex>
