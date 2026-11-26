@@ -24,6 +24,7 @@ function session(overrides: Partial<Session>): Session {
     title: "Title",
     speaker: "Speaker",
     track: "React",
+    level: "beginner",
     room: "Main Hall",
     startTime: "09:00",
     durationMinutes: 45,

@@ -18,5 +18,10 @@
     "title": "Speakers",
     "description": "Who is speaking at React Alicante, and when.",
     "empty": "No speakers have been announced yet."
+  },
+  "SessionLevel": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
   }
 }

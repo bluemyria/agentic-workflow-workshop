@@ -1,4 +1,5 @@
 import { Badge } from "@/components/atoms/badge";
+import { LevelBadge } from "@/components/atoms/level-badge";
 import { Link } from "@/i18n/navigation";
 import { fetchSessionById, fetchSessions } from "@/services/sessions";
 import { Flex, Heading, Text } from "@chakra-ui/react";
@@ -44,6 +45,7 @@ export default async function SessionDetailPage({
       <Flex direction="column" gap="3">
         <Flex align="center" gap="3">
           <Badge>{session.track}</Badge>
+          <LevelBadge level={session.level} />
           <Text fontSize="sm" color="var(--text-muted)">
             {session.startTime} · {session.durationMinutes} min · {session.room}
           </Text>

@@ -4,7 +4,8 @@ import {
 } from "@chakra-ui/react";
 import type { HTMLAttributes } from "react";
 
-export type BadgeVariant = "default" | "secondary" | "destructive" | "outline";
+export type BadgeVariant =
+  "default" | "secondary" | "destructive" | "outline" | "accent";
 
 export interface BadgeProps extends Omit<
   HTMLAttributes<HTMLSpanElement>,
@@ -33,6 +34,11 @@ const VARIANT_CSS: Record<BadgeVariant, ChakraBadgeProps["css"]> = {
     background: "transparent",
     color: "var(--text-primary)",
     borderColor: "var(--card-border-hex)",
+  },
+  accent: {
+    background: "var(--accent-subtle-bg)",
+    color: "var(--accent-text-hex)",
+    borderColor: "var(--accent-hex)",
   },
 };
 
