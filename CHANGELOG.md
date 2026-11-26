@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.4.0] — 2026-11-26
+
+### Features
+
+- Speakers page (`/en/speakers`, `/es/speakers`): one card per speaker listing their sessions with start times and links to each session. A Speakers / Ponentes link is in the desktop nav and the mobile menu (#4, closes #1)
+- Session level: each session shows a translated level badge on its page and in the timeline. This is backed by a new `session_level` enum and a required `sessions.level` column (#6, closes #2)
+
+### Maintenance
+
+- Ignore the personal notes file and regenerate the Supabase types
+
+## Test Suite
+
+| Suite          | Status     |
+| -------------- | ---------- |
+| ESLint         | ⏳ pending |
+| Type-check     | ⏳ pending |
+| Unit tests     | ⏳ pending |
+| Build (Vercel) | ⏳ pending |
+
 ## [0.3.2] — 2026-11-26
 
 ### Maintenance
