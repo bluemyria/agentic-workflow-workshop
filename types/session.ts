@@ -15,7 +15,7 @@ export type Level = Database["public"]["Enums"]["session_level"];
  */
 export type Session = Pick<
   SessionRow,
-  "id" | "title" | "speaker" | "track" | "room" | "description"
+  "id" | "title" | "speaker" | "track" | "level" | "room" | "description"
 > & {
   startTime: SessionRow["start_time"];
   durationMinutes: SessionRow["duration_minutes"];
