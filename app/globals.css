@@ -11,6 +11,9 @@
 
   --accent-hex: #7c5cff;
   --accent-muted: #a78bfa;
+  /* Accent text on a light accent tint, for small labels; both meet 4.5:1. */
+  --accent-text-hex: #a78bfa;
+  --accent-subtle-bg: rgba(124, 92, 255, 0.15);
   --success-hex: #22c55e;
   --warning-hex: #f59e0b;
   --error-hex: #ef4444;
@@ -31,6 +34,8 @@
   --text-muted: #8b92a3;
 
   --accent-hex: #6d4aff;
+  --accent-text-hex: #5b3ae6;
+  --accent-subtle-bg: rgba(109, 74, 255, 0.1);
 }
 
 * {
