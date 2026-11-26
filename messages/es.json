@@ -18,5 +18,10 @@
     "title": "Ponentes",
     "description": "Quién habla en React Alicante, y cuándo.",
     "empty": "Todavía no se han anunciado ponentes."
+  },
+  "SessionLevel": {
+    "beginner": "Principiante",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado"
   }
 }
